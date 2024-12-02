@@ -27,7 +27,7 @@ public class Principal {
 			char caracter = nome.charAt(indice);
 			System.out.println(caracter);
 		}catch(StringIndexOutOfBoundsException e) {
-			System.out.println("Erro de indice");
+			System.out.println("O indice digitado está fora do tamanho da String.");
 		}
 	}
 
