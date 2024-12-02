@@ -36,22 +36,25 @@ public class Principal {
 		}catch (DimensoesInvalidasException e){
 			System.out.println(e.getMessage());
 		}
-		
-//		3 - Ler do usuário três números
-		System.out.println("Digite o lado 1: ");
-		int lado1 = leitor.nextInt();
-		System.out.println("Digite o lado 2: ");
-		int lado2 = leitor.nextInt();
-		System.out.println("Digite o lado 3: ");
-		int lado3 = leitor.nextInt();
-		
-//		4 - Instanciar um objeto Triangular usando os valores lidos no passo anterior como lados
+				
 		try {
+//			3 - Ler do usuário três números
+			System.out.println("Digite o lado 1: ");
+			int lado1 = leitor.nextInt();
+			System.out.println("Digite o lado 2: ");
+			int lado2 = leitor.nextInt();
+			System.out.println("Digite o lado 3: ");
+			int lado3 = leitor.nextInt();
+			
+//			4 - Instanciar um objeto Triangular usando os valores lidos no passo anterior como lados
 			Triangulo triangulo2 = new Triangulo(lado1, lado2, lado3);
 			System.out.println("Triângulo criado.");
 		}catch (DimensoesInvalidasException e){
 			System.out.println(e.getMessage());
-		}finally {
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		finally {
 			leitor.close();
 		}
 		
