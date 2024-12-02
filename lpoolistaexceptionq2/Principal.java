@@ -29,6 +29,7 @@ public class Principal {
 			idades.remove(indice);
 			System.out.println("Idade removida.");
 		}catch (Exception e){
+			//e.printStackTrace();
 			System.out.println("O indice digitado está fora do tamanho do ArrayList.");
 		}
 		
