@@ -28,9 +28,11 @@ public class Principal {
 			arquivo.createNewFile();
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
+		}finally {
+			leitor.close();
 		}
 		
-		leitor.close();
+		
 	}
 
 }

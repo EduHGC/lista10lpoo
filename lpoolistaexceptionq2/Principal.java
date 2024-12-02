@@ -31,11 +31,13 @@ public class Principal {
 		}catch (Exception e){
 			//e.printStackTrace();
 			System.out.println("O indice digitado está fora do tamanho do ArrayList.");
+		}finally {
+			System.out.println(idades);
+			
+			leitor.close();
 		}
 		
-		System.out.println(idades);
 		
-		leitor.close();
 	}
 
 }
